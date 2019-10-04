@@ -5,11 +5,11 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomeContent {
 	@FindBy(xpath= "//input[@name='userName']")
-	WebElement userName;
+	public WebElement userName;
 	
 	@FindBy(xpath= "//input[@name='password']")
-	WebElement password;
+	public WebElement password;
 	
 	@FindBy(xpath= "//input[@name='login']")
-	WebElement loginButton;
+	public WebElement loginButton;
 }

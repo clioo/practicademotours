@@ -38,7 +38,7 @@ public class Setup {
 		}else {
 			throw new Exception(browserOption + " is not a valid browser option");
 		}
-		driver.navigate().to("http://automationpractice.com/index.php");
+		driver.navigate().to("http://newtours.demoaut.com/index.php");
 		driver.manage().window().maximize();
 	}
 }
