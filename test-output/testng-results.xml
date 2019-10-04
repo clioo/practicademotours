@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="44" passed="44">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="959" started-at="2019-10-04T00:29:40 MDT" finished-at="2019-10-04T00:29:41 MDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="959" started-at="2019-10-04T00:29:40 MDT" finished-at="2019-10-04T00:29:41 MDT">
+      <class name="org.softtek.tests.test">
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="10" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@38c6f217]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="2" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7e07db1f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="2" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@36bc55de]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="2" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@16d04d3d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="3" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1d2adfbe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@223d2c72]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="2" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@436813f3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3febb011]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@131774fe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@77847718]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="2" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@57a3af25]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7f0eb4b4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="3" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1623b78d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@6adbc9d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@223191a6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="2" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@6069db50]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1b7cc17c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@77fbd92c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1a482e36]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@5b8dfcc1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@747ddf94]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="2" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1bd4fdd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="0" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4f83df68]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7d8995e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="2" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@42a48628]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@6aeb35e6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="0" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@74f0ea28]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="3" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3c19aaa5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@409bf450]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@49e53c76]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="0" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@2a3b5b47]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="5" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@35d019a3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@18078bef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4c371370]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="2" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3023df74]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="2" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4562e04d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4135c3b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@31304f14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="2" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@2a4fb17b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@6f1de4c7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="2" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@128d2484]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="2" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7c7b252e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="2" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@368f2016]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+        <test-method status="PASS" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@4973813a]" name="prueba1" duration-ms="1" started-at="2019-10-04T00:29:41 MDT" description="Test Case for Register an user" data-provider="DataGoogleSheets" finished-at="2019-10-04T00:29:41 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@692f203f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prueba1 -->
+      </class> <!-- org.softtek.tests.test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
