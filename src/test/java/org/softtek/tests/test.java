@@ -2,18 +2,21 @@ package org.softtek.tests;
 
 import static org.testng.Assert.assertEquals;
 
-import java.io.IOException;
-import java.security.GeneralSecurityException;
-import java.util.List;
 
-import org.softtek.utils.SheetsUtil;
+
+import org.softtek.config.Setup;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
-public class test {
+public class test extends Setup{
 	Object[] testObjArray;
 	
+	@BeforeTest
+	private void setUp() throws Exception{
+		setBrowser("Internet explorer");
+	}
 	
 	@Test(dataProvider = "DataGoogleSheets", description="Test Case for Register an user")
     public void prueba1(String ... data) {
@@ -22,7 +25,7 @@ public class test {
     
 	@DataProvider(name = "DataGoogleSheets")
 	public Object[] userRegister() throws Exception{
-		testObjArray = SheetsUtil.getData();
+		testObjArray = sheet.getData();
 		return (testObjArray);
 	}
 }

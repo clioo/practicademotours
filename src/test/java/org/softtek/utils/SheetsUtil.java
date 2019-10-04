@@ -26,13 +26,23 @@ public class SheetsUtil {
     private static final String APPLICATION_NAME = "Google Sheets API Java Quickstart";
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
     private static final String TOKENS_DIRECTORY_PATH = "tokens";
-
-    /**
-     * Global instance of the scopes required by this quickstart.
-     * If modifying these scopes, delete your previously saved tokens/ folder.
-     */
     private static final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS_READONLY);
     private static final String CREDENTIALS_FILE_PATH =	"/credentials.json";
+    private NetHttpTransport HTTP_TRANSPORT = null;
+    private String spreadsheetId;
+    private String range;
+    private Sheets service;
+    public SheetsUtil() throws GeneralSecurityException, IOException {
+      	 // Build a new authorized API client service.
+           HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+           spreadsheetId = "1EuC-SAQ9bLjQw5zNR_QBltQz2-A8RydLNN-myoRDV7Y";//TO:DO get from the environment
+           //A5 is the begining of the datatable, firs row is for headers
+           range = "A5:S1000"; //TO:DO get from the environment
+           service = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
+                   .setApplicationName(APPLICATION_NAME)
+                   .build();
+    }
+    
     private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
         // Load client secrets.
         InputStream in = SheetsUtil.class.getResourceAsStream(CREDENTIALS_FILE_PATH);
@@ -53,17 +63,10 @@ public class SheetsUtil {
     }
 
     
-    public static Object[] getData() throws IOException, GeneralSecurityException{
-   	 // Build a new authorized API client service.
-    	String[][] tabArray = null;
-        final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
-        final String spreadsheetId = "1EuC-SAQ9bLjQw5zNR_QBltQz2-A8RydLNN-myoRDV7Y";
-        final String range = "A1:S1000";
-        Sheets service = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
-                .setApplicationName(APPLICATION_NAME)
-                .build();
-        ValueRange response = service.spreadsheets().values()
-                .get(spreadsheetId, range)
+    public Object[] getData() throws IOException, GeneralSecurityException{
+       	String[][] tabArray = null;
+        ValueRange response = this.service.spreadsheets().values()
+                .get(this.spreadsheetId, this.range)
                 .execute();
         List<List<Object>> values = response.getValues();
         if(values.size() > 1) {
@@ -82,4 +85,10 @@ public class SheetsUtil {
         return tabArray;
         
     }
+    
+    public static String getBrowser() {
+    	return "";
+    }
 }
+
+
