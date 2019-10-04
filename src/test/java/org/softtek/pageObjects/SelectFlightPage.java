@@ -37,14 +37,34 @@ public class SelectFlightPage {
 	}
 	
 	public Boolean rightDate(String month, String day) throws ParseException {
-		////*[contains(text(),'10/4/2019')]
-		Date date = (Date) new SimpleDateFormat("MMMM", Locale.ENGLISH).parse(month);
-		Calendar cal = Calendar.getInstance();
-		cal.setTime(date);
-		Integer monthNumber = Calendar.MONTH;
-		System.out.println(month);
-		System.out.println(monthNumber.toString());
-		WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+monthNumber.toString()+"/"
+		String monthNumber = "";
+		if (month.equals("January")) {
+			monthNumber = "1";
+		}else if(month.equals("February")) {
+			monthNumber = "2";
+		}else if(month.equals("March")) {
+			monthNumber = "3";
+		}else if(month.equals("April")) {
+			monthNumber = "4";
+		}else if(month.equals("May")) {
+			monthNumber = "5";
+		}else if(month.equals("June")) {
+			monthNumber = "6";
+		}else if(month.equals("July")) {
+			monthNumber = "7";
+		}else if(month.equals("August")) {
+			monthNumber = "8";
+		}else if(month.equals("September")) {
+			monthNumber = "9";
+		}else if(month.equals("October")) {
+			monthNumber = "10";
+		}else if(month.equals("November")) {
+			monthNumber = "11";
+		}else if(month.equals("December")) {
+			monthNumber = "12";
+		}
+
+		WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+monthNumber+"/"
 				+day+"/2019')]"));
 		 try {
 			 Dimension dimensions = element.getSize();
@@ -52,5 +72,9 @@ public class SelectFlightPage {
 		} catch (Exception e) {
 			return false;
 		}
+	}
+
+	public void printChoices() {
+		
 	}
 }

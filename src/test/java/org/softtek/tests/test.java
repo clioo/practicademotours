@@ -52,8 +52,8 @@ public class test extends Setup{
     public void selectFlight(String ... data) throws ParseException {
 		SelectFlightPage selectFlightPage = new SelectFlightPage(driver);
 		selectFlightPage.rightOriginDestiny(data[4], data[7]);
-		selectFlightPage.rightDate(data[5], data[6]);
-		selectFlightPage.rightDate(data[8], data[9]);
+		System.out.println(selectFlightPage.rightDate(data[5], data[6]));
+		System.out.println(selectFlightPage.rightDate(data[8], data[9]));
     }
     
 	@DataProvider(name = "DataGoogleSheets")
