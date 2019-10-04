@@ -13,7 +13,7 @@ public class HomePage {
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		homeContent = PageFactory.initElements(driver, HomeContent.class);
-		wait = new WebDriverWait(this.driver, 5);
+		wait = new WebDriverWait(this.driver, 35);
 		wait.until(ExpectedConditions.elementToBeClickable(homeContent.userName));
 	}
 	public void setUsername(String value) {
@@ -24,6 +24,5 @@ public class HomePage {
 	}
 	public void login() {
 		homeContent.loginButton.click();
-		
 	}
 }
