@@ -44,4 +44,7 @@ public class FlightFinderContent {
 	@FindBy(xpath= "//select[@name='airline']")
 	public WebElement selectAirline;
 	
+	@FindBy(xpath= "//input[@name='findFlights']")
+	public WebElement findFlightsButton;
+	
 }
