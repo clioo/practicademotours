@@ -21,27 +21,24 @@ public class Setup {
 	public static void setGoogleSheet() throws GeneralSecurityException, IOException {
 		sheet = new SheetsUtil();
 	}
-	
 	/*
-	 * Browser options available: "Chrome", "Internet explorer"  and "Firefox"
+	 * Browser options available in google sheet: "Chrome", "Internet explorer"  and "Firefox"
 	 */
 	public static void setBrowser(String browserOption) throws Exception {
-		if (browserOption == "Chrome") {
+		System.out.println(browserOption);
+		if (browserOption.equals("Chrome") ) {
 			System.setProperty("webdriver.chrome.driver", chromePath);
 			driver = new ChromeDriver();
-		}else if(browserOption == "Firefox") {
+		}else if(browserOption.equals("Firefox")) {
 			System.setProperty("webdriver.gecko.driver", fireFoxPath);
 			driver = new FirefoxDriver();
-		}else if(browserOption == "Internet explorer") {
+		}else if(browserOption.equals("Internet explorer")) {
 			System.setProperty("webdriver.ie.driver", iePath);
 			driver = new InternetExplorerDriver();
 		}else {
-			throw new Exception("Not a valid browser option");
+			throw new Exception(browserOption + " is not a valid browser option");
 		}
 		driver.navigate().to("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();
 	}
-	
-
-	
 }

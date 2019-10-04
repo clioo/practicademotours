@@ -5,6 +5,8 @@
     <classes>
       <class name="org.softtek.tests.test">
         <methods>
+          <include name="setGoogleSheet"/>
+          <include name="setUp"/>
           <include name="prueba1"/>
         </methods>
       </class> <!-- org.softtek.tests.test -->

@@ -37,7 +37,6 @@ public class SheetsUtil {
            HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
            spreadsheetId = "1EuC-SAQ9bLjQw5zNR_QBltQz2-A8RydLNN-myoRDV7Y";//TO:DO get from the environment
            //A5 is the begining of the datatable, firs row is for headers
-           range = "A5:S1000"; //TO:DO get from the environment
            service = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
                    .setApplicationName(APPLICATION_NAME)
                    .build();
@@ -64,6 +63,7 @@ public class SheetsUtil {
 
     
     public Object[] getData() throws IOException, GeneralSecurityException{
+    	range = "A5:S1000"; //TO:DO get from the environment
        	String[][] tabArray = null;
         ValueRange response = this.service.spreadsheets().values()
                 .get(this.spreadsheetId, this.range)
@@ -86,8 +86,13 @@ public class SheetsUtil {
         
     }
     
-    public static String getBrowser() {
-    	return "";
+    public String getBrowser() throws IOException {
+    	range = "B2"; //TO:DO get from the environment
+        ValueRange response = this.service.spreadsheets().values()
+                .get(this.spreadsheetId, this.range)
+                .execute();
+        List<List<Object>> values = response.getValues();
+    	return values.get(0).get(0).toString();
     }
 }
 
