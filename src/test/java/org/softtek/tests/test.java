@@ -2,12 +2,13 @@ package org.softtek.tests;
 
 import static org.testng.Assert.assertEquals;
 
-
+import java.text.ParseException;
 
 import org.softtek.config.Setup;
 import org.softtek.objects.User;
 import org.softtek.pageObjects.FindFlightPage;
 import org.softtek.pageObjects.HomePage;
+import org.softtek.pageObjects.SelectFlightPage;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -45,6 +46,14 @@ public class test extends Setup{
 		findFlightPage.selectReturningDay(data[9]);
 		findFlightPage.selectAirline(data[10]);
 		findFlightPage.submit();
+    }
+	
+	@Test(dataProvider = "DataGoogleSheets", description="I want to select a flight", priority=2)
+    public void selectFlight(String ... data) throws ParseException {
+		SelectFlightPage selectFlightPage = new SelectFlightPage(driver);
+		selectFlightPage.rightOriginDestiny(data[4], data[7]);
+		selectFlightPage.rightDate(data[5], data[6]);
+		selectFlightPage.rightDate(data[8], data[9]);
     }
     
 	@DataProvider(name = "DataGoogleSheets")
