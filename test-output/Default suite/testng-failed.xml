@@ -7,7 +7,7 @@
         <methods>
           <include name="setGoogleSheet"/>
           <include name="setUp"/>
-          <include name="prueba1"/>
+          <include name="prueba1" invocation-numbers="0"/>
         </methods>
       </class> <!-- org.softtek.tests.test -->
     </classes>

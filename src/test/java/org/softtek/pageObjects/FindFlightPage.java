@@ -71,6 +71,11 @@ public class FindFlightPage {
 		}
 	}
 	
+	public void selectAirline(String value) {
+		Select select = new Select(flightFinderContent.selectAirline);
+		select.selectByVisibleText(value);
+	}
+	
 	public void submit(String value) {
 		flightFinderContent.findFlightsButton.click();
 	}
