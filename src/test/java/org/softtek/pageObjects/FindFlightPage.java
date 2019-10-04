@@ -15,7 +15,7 @@ public class FindFlightPage {
 		this.driver = driver;
 		flightFinderContent = PageFactory.initElements(driver, FlightFinderContent.class);
 		wait = new WebDriverWait(this.driver, 35);
-		wait.until(ExpectedConditions.elementToBeClickable(flightFinderContent.imageFlightFinder));
+		wait.until(ExpectedConditions.elementToBeClickable(flightFinderContent.selectAirline));
 	}
 	public void selectRadioTripType(String type){
 		if(type.equals("Round Trip")) {
@@ -41,7 +41,7 @@ public class FindFlightPage {
 	}
 	
 	public void selectOnDay(String value) {
-		Select select = new Select(flightFinderContent.selectOnMonth);
+		Select select = new Select(flightFinderContent.selectOnDay);
 		select.selectByVisibleText(value);
 	}
 	
@@ -76,7 +76,7 @@ public class FindFlightPage {
 		select.selectByVisibleText(value);
 	}
 	
-	public void submit(String value) {
+	public void submit() {
 		flightFinderContent.findFlightsButton.click();
 	}
 	

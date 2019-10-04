@@ -43,7 +43,8 @@ public class test extends Setup{
 		findFlightPage.selectArriving(data[7]);
 		findFlightPage.selectReturningMonth(data[8]);
 		findFlightPage.selectReturningDay(data[9]);
-		findFlightPage.selectAirline(data[10]);;
+		findFlightPage.selectAirline(data[10]);
+		findFlightPage.submit();
     }
     
 	@DataProvider(name = "DataGoogleSheets")

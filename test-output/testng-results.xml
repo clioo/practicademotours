@@ -1,104 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44088" started-at="2019-10-04T12:42:49 PDT" finished-at="2019-10-04T12:43:33 PDT">
+  <suite name="Default suite" duration-ms="14269" started-at="2019-10-04T13:02:34 PDT" finished-at="2019-10-04T13:02:48 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44088" started-at="2019-10-04T12:42:49 PDT" finished-at="2019-10-04T12:43:33 PDT">
+    <test name="Default test" duration-ms="14269" started-at="2019-10-04T13:02:34 PDT" finished-at="2019-10-04T13:02:48 PDT">
       <class name="org.softtek.tests.test">
-        <test-method status="PASS" signature="setGoogleSheet()[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="setGoogleSheet" is-config="true" duration-ms="631" started-at="2019-10-04T12:42:48 PDT" finished-at="2019-10-04T12:42:49 PDT">
+        <test-method status="PASS" signature="setGoogleSheet()[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="setGoogleSheet" is-config="true" duration-ms="589" started-at="2019-10-04T13:02:33 PDT" finished-at="2019-10-04T13:02:34 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setGoogleSheet -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="setUp" is-config="true" duration-ms="7400" started-at="2019-10-04T12:42:49 PDT" finished-at="2019-10-04T12:42:56 PDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="setUp" is-config="true" duration-ms="6522" started-at="2019-10-04T13:02:34 PDT" finished-at="2019-10-04T13:02:40 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="prueba1([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="prueba1" duration-ms="35612" started-at="2019-10-04T12:42:57 PDT" description="I want to login" data-provider="DataGoogleSheets" finished-at="2019-10-04T12:43:33 PDT">
+        <test-method status="PASS" signature="login([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="login" duration-ms="4732" started-at="2019-10-04T13:02:41 PDT" description="I want to login" data-provider="DataGoogleSheets" finished-at="2019-10-04T13:02:45 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@6063d80a]]>
+                <![CDATA[[Ljava.lang.String;@784c3487]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[Currently focused window has been closed.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LSTKEN48291', ip: '10.0.16.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:16703/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 5d395c07-a31c-42f7-84ab-dda87445c957
-*** Element info: {Using=xpath, value=//input[@name='userName']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Currently focused window has been closed.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LSTKEN48291', ip: '10.0.16.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:16703/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 5d395c07-a31c-42f7-84ab-dda87445c957
-*** Element info: {Using=xpath, value=//input[@name='userName']}
-at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy11.toString(Unknown Source)
-at java.lang.String.valueOf(Unknown Source)
-at java.lang.StringBuilder.append(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:683)
-at java.lang.String.valueOf(Unknown Source)
-at java.lang.StringBuilder.append(Unknown Source)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:268)
-at org.softtek.pageObjects.HomePage.<init>(HomePage.java:17)
-at org.softtek.tests.test.prueba1(test.java:26)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- prueba1 -->
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="findFlight([Ljava.lang.String;)[pri:1, instance:org.softtek.tests.test@3d99d22e]" name="findFlight" duration-ms="2559" started-at="2019-10-04T13:02:46 PDT" description="I want to find a flight" data-provider="DataGoogleSheets" finished-at="2019-10-04T13:02:48 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@fd46303]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findFlight -->
       </class> <!-- org.softtek.tests.test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
