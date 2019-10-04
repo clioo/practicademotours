@@ -2,46 +2,46 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21369" started-at="2019-10-04T15:07:11 PDT" finished-at="2019-10-04T15:07:32 PDT">
+  <suite name="Default suite" duration-ms="25633" started-at="2019-10-04T15:13:23 PDT" finished-at="2019-10-04T15:13:49 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21369" started-at="2019-10-04T15:07:11 PDT" finished-at="2019-10-04T15:07:32 PDT">
+    <test name="Default test" duration-ms="25633" started-at="2019-10-04T15:13:23 PDT" finished-at="2019-10-04T15:13:49 PDT">
       <class name="org.softtek.tests.test">
-        <test-method status="PASS" signature="setGoogleSheet()[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="setGoogleSheet" is-config="true" duration-ms="645" started-at="2019-10-04T15:07:10 PDT" finished-at="2019-10-04T15:07:11 PDT">
+        <test-method status="PASS" signature="setGoogleSheet()[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="setGoogleSheet" is-config="true" duration-ms="614" started-at="2019-10-04T15:13:22 PDT" finished-at="2019-10-04T15:13:23 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setGoogleSheet -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="setUp" is-config="true" duration-ms="11540" started-at="2019-10-04T15:07:11 PDT" finished-at="2019-10-04T15:07:22 PDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="setUp" is-config="true" duration-ms="12074" started-at="2019-10-04T15:13:23 PDT" finished-at="2019-10-04T15:13:35 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="login" duration-ms="7685" started-at="2019-10-04T15:07:23 PDT" description="I want to login" data-provider="DataGoogleSheets" finished-at="2019-10-04T15:07:30 PDT">
+        <test-method status="PASS" signature="login([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="login" duration-ms="11404" started-at="2019-10-04T15:13:35 PDT" description="I want to login" data-provider="DataGoogleSheets" finished-at="2019-10-04T15:13:47 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@3bd418e4]]>
+                <![CDATA[[Ljava.lang.String;@56e8b606]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="findFlight([Ljava.lang.String;)[pri:1, instance:org.softtek.tests.test@3d99d22e]" name="findFlight" duration-ms="1319" started-at="2019-10-04T15:07:30 PDT" description="I want to find a flight" data-provider="DataGoogleSheets" finished-at="2019-10-04T15:07:32 PDT">
+        <test-method status="PASS" signature="findFlight([Ljava.lang.String;)[pri:1, instance:org.softtek.tests.test@3d99d22e]" name="findFlight" duration-ms="1320" started-at="2019-10-04T15:13:47 PDT" description="I want to find a flight" data-provider="DataGoogleSheets" finished-at="2019-10-04T15:13:48 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@6c345c5f]]>
+                <![CDATA[[Ljava.lang.String;@4a9f80d3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findFlight -->
-        <test-method status="PASS" signature="selectFlight([Ljava.lang.String;)[pri:2, instance:org.softtek.tests.test@3d99d22e]" name="selectFlight" duration-ms="154" started-at="2019-10-04T15:07:32 PDT" description="I want to select a flight" data-provider="DataGoogleSheets" finished-at="2019-10-04T15:07:32 PDT">
+        <test-method status="PASS" signature="selectFlight([Ljava.lang.String;)[pri:2, instance:org.softtek.tests.test@3d99d22e]" name="selectFlight" duration-ms="143" started-at="2019-10-04T15:13:48 PDT" description="I want to select a flight" data-provider="DataGoogleSheets" finished-at="2019-10-04T15:13:49 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@ec0c838]]>
+                <![CDATA[[Ljava.lang.String;@2f162cc0]]>
               </value>
             </param>
           </params>

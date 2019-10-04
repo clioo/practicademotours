@@ -13,6 +13,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import junit.framework.Assert;
+
 
 public class test extends Setup{
 	Object[] testObjArray;
@@ -51,9 +53,10 @@ public class test extends Setup{
 	@Test(dataProvider = "DataGoogleSheets", description="I want to select a flight", priority=2)
     public void selectFlight(String ... data) throws ParseException {
 		SelectFlightPage selectFlightPage = new SelectFlightPage(driver);
-		selectFlightPage.rightOriginDestiny(data[4], data[7]);
-		System.out.println(selectFlightPage.rightDate(data[5], data[6]));
-		System.out.println(selectFlightPage.rightDate(data[8], data[9]));
+		Assert.assertTrue("Destinos no coinciden", selectFlightPage.rightOriginDestiny(data[4], data[7]));
+		Assert.assertTrue("Fecha no coincide", selectFlightPage.rightDate(data[5], data[6]));
+		Assert.assertTrue("Fecha no coincide",selectFlightPage.rightDate(data[8], data[9]));
+		
     }
     
 	@DataProvider(name = "DataGoogleSheets")

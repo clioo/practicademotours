@@ -74,7 +74,7 @@ public class SelectFlightPage {
 		}
 	}
 
-	public void printChoices() {
+	public void printChoicesFromDepart() {
 		
 	}
 }
