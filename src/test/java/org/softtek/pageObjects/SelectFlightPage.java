@@ -1,13 +1,6 @@
 package org.softtek.pageObjects;
 
-import java.util.Date;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Locale;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -15,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.softtek.locators.SelectFlightContent;
 
-public class SelectFlightPage {
+public class SelectFlightPage extends BasePage{
 	public WebDriver driver;
 	WebDriverWait wait;
 	public SelectFlightContent selectFlightContent;
@@ -28,53 +21,86 @@ public class SelectFlightPage {
 	
 	public Boolean rightOriginDestiny(String from, String to) {
 		WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+from+" to "+to+"')]"));
-		 try {
-			 Dimension dimensions = element.getSize();
-			 return true;
-		} catch (Exception e) {
-			return false;
+		return elementExists(element);
+	}
+	
+	  /**
+	   * month name in MMMM format, only months in english.
+	   */
+	public Boolean rightDate(String monthName, String day) throws Exception{
+		String monthNumber = getMonthNameNumber(monthName);
+		WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+monthNumber+"/"
+				+day+"/2019')]"));	
+		return elementExists(element);
+	}
+
+	public void printDepartDetails() {
+		for (int i = 0; i < selectFlightContent.departFlightAirlinesElements.size(); i++) {
+			WebElement flightElement = selectFlightContent.departFlightAirlinesElements.get(i);
+			WebElement flightPriceElement = selectFlightContent.departFlightPriceElements.get(i);
+			WebElement departTimeElement = selectFlightContent.departFlightTimesElements.get(i);
+			WebElement stopsElement = selectFlightContent.departFlightStopsElements.get(i);
+			System.out.println(flightElement.getText());
+			System.out.println(flightPriceElement.getText());
+			System.out.println(departTimeElement.getText());
+			System.out.println(stopsElement.getText());
 		}
 	}
 	
-	public Boolean rightDate(String month, String day) throws ParseException {
-		String monthNumber = "";
-		if (month.equals("January")) {
-			monthNumber = "1";
-		}else if(month.equals("February")) {
-			monthNumber = "2";
-		}else if(month.equals("March")) {
-			monthNumber = "3";
-		}else if(month.equals("April")) {
-			monthNumber = "4";
-		}else if(month.equals("May")) {
-			monthNumber = "5";
-		}else if(month.equals("June")) {
-			monthNumber = "6";
-		}else if(month.equals("July")) {
-			monthNumber = "7";
-		}else if(month.equals("August")) {
-			monthNumber = "8";
-		}else if(month.equals("September")) {
-			monthNumber = "9";
-		}else if(month.equals("October")) {
-			monthNumber = "10";
-		}else if(month.equals("November")) {
-			monthNumber = "11";
-		}else if(month.equals("December")) {
-			monthNumber = "12";
-		}
-
-		WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+monthNumber+"/"
-				+day+"/2019')]"));
-		 try {
-			 Dimension dimensions = element.getSize();
-			 return true;
-		} catch (Exception e) {
-			return false;
+	public void printReturnDetails() {
+		for (int i = 0; i < selectFlightContent.departFlightAirlinesElements.size(); i++) {
+			WebElement flightElement = selectFlightContent.returnFlightAirlinesElements.get(i);
+			WebElement flightPriceElement = selectFlightContent.returnFlightPriceElements.get(i);
+			WebElement departTimeElement = selectFlightContent.returnFlightTimesElements.get(i);
+			WebElement stopsElement = selectFlightContent.returnFlightStopsElements.get(i);
+			System.out.println(flightElement.getText());
+			System.out.println(flightPriceElement.getText());
+			System.out.println(departTimeElement.getText());
+			System.out.println(stopsElement.getText());
 		}
 	}
-
-	public void printChoicesFromDepart() {
-		
+	
+	  /**
+	   * Returns the selected airline.
+	   */
+	public String chooseLowerDepartPrice() {
+		Integer lower = 0;
+		Integer lowerIndex = 0;
+		for (int i = 0; i < selectFlightContent.radioGroupDepart.size(); i++) {
+			Integer price = getPriceFromString(selectFlightContent.departFlightPriceElements.get(i).getText());
+			if (i == 0) {
+				lower = price;
+			}
+			if (price < lower) {
+				lower = price;
+				lowerIndex = i;
+			}
+		}
+		selectFlightContent.radioGroupDepart.get(lowerIndex).click();
+		return selectFlightContent.departFlightAirlinesElements.get(lowerIndex).getText();
+	}
+	
+	  /**
+	   * Returns the selected airline.
+	   */
+	public String chooseHigherReturnPrice() {
+		Integer higher = 0;
+		Integer higherIndex = 0;
+		for (int i = 0; i < selectFlightContent.radioGroupDepart.size(); i++) {
+			Integer price = getPriceFromString(selectFlightContent.departFlightPriceElements.get(i).getText());
+			if (i == 0) {
+				higher = price;
+			}
+			if (price > higher) {
+				higher = price;
+				higherIndex = i;
+			}
+		}
+		selectFlightContent.radioGroupReturn.get(higherIndex).click();
+		return selectFlightContent.returnFlightAirlinesElements.get(higherIndex).getText();
+	}
+	
+	public void reserveFlights() {
+		selectFlightContent.reserveFlightsButton.click();
 	}
 }

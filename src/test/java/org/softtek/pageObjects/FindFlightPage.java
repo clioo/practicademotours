@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.softtek.locators.FlightFinderContent;
 
-public class FindFlightPage {
+public class FindFlightPage extends BasePage {
 	public WebDriver driver;
 	WebDriverWait wait;
 	public FlightFinderContent flightFinderContent;
@@ -26,38 +26,31 @@ public class FindFlightPage {
 	}
 	
 	public void selectPassengers(String value) {
-		Select select = new Select(flightFinderContent.selectPassengers);
-		select.selectByVisibleText(value);
+		selectByVisible(flightFinderContent.selectPassengers, value);
 	}
 	
 	public void selectDpartingFrom(String value) {
-		Select select = new Select(flightFinderContent.selectDepartingFrom);
-		select.selectByVisibleText(value);
+		selectByVisible(flightFinderContent.selectDepartingFrom, value);
 	}
 	
 	public void selectOnMonth(String value) {
-		Select select = new Select(flightFinderContent.selectOnMonth);
-		select.selectByVisibleText(value);
+		selectByVisible(flightFinderContent.selectOnMonth, value);
 	}
 	
 	public void selectOnDay(String value) {
-		Select select = new Select(flightFinderContent.selectOnDay);
-		select.selectByVisibleText(value);
+		selectByVisible(flightFinderContent.selectOnDay, value);
 	}
 	
 	public void selectArriving(String value) {
-		Select select = new Select(flightFinderContent.selectArriving);
-		select.selectByVisibleText(value);
+		selectByVisible(flightFinderContent.selectArriving, value);
 	}
 	
 	public void selectReturningMonth(String value) {
-		Select select = new Select(flightFinderContent.selectReturningMonth);
-		select.selectByVisibleText(value);
+		selectByVisible(flightFinderContent.selectReturningMonth, value);
 	}
 	
 	public void selectReturningDay(String value) {
-		Select select = new Select(flightFinderContent.selectReturningDay);
-		select.selectByVisibleText(value);
+		selectByVisible(flightFinderContent.selectReturningDay, value);
 	}
 	
 	
@@ -72,8 +65,7 @@ public class FindFlightPage {
 	}
 	
 	public void selectAirline(String value) {
-		Select select = new Select(flightFinderContent.selectAirline);
-		select.selectByVisibleText(value);
+		selectByVisible(flightFinderContent.selectAirline, value);
 	}
 	
 	public void submit() {

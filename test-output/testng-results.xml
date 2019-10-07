@@ -1,53 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="9" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25633" started-at="2019-10-04T15:13:23 PDT" finished-at="2019-10-04T15:13:49 PDT">
+  <suite name="Default suite" duration-ms="17920" started-at="2019-10-06T18:27:03 MDT" finished-at="2019-10-06T18:27:21 MDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25633" started-at="2019-10-04T15:13:23 PDT" finished-at="2019-10-04T15:13:49 PDT">
+    <test name="Default test" duration-ms="17920" started-at="2019-10-06T18:27:03 MDT" finished-at="2019-10-06T18:27:21 MDT">
       <class name="org.softtek.tests.test">
-        <test-method status="PASS" signature="setGoogleSheet()[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="setGoogleSheet" is-config="true" duration-ms="614" started-at="2019-10-04T15:13:22 PDT" finished-at="2019-10-04T15:13:23 PDT">
+        <test-method status="PASS" signature="setGoogleSheet()[pri:0, instance:org.softtek.tests.test@2a17b7b6]" name="setGoogleSheet" is-config="true" duration-ms="234" started-at="2019-10-06T18:27:02 MDT" finished-at="2019-10-06T18:27:03 MDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setGoogleSheet -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="setUp" is-config="true" duration-ms="12074" started-at="2019-10-04T15:13:23 PDT" finished-at="2019-10-04T15:13:35 PDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.softtek.tests.test@2a17b7b6]" name="setUp" is-config="true" duration-ms="7837" started-at="2019-10-06T18:27:03 MDT" finished-at="2019-10-06T18:27:11 MDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@3d99d22e]" name="login" duration-ms="11404" started-at="2019-10-04T15:13:35 PDT" description="I want to login" data-provider="DataGoogleSheets" finished-at="2019-10-04T15:13:47 PDT">
+        <test-method status="PASS" signature="login([Ljava.lang.String;)[pri:0, instance:org.softtek.tests.test@2a17b7b6]" name="login" duration-ms="4814" started-at="2019-10-06T18:27:11 MDT" description="I want to login" data-provider="DataGoogleSheets" finished-at="2019-10-06T18:27:16 MDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@56e8b606]]>
+                <![CDATA[[Ljava.lang.String;@21a21c64]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="findFlight([Ljava.lang.String;)[pri:1, instance:org.softtek.tests.test@3d99d22e]" name="findFlight" duration-ms="1320" started-at="2019-10-04T15:13:47 PDT" description="I want to find a flight" data-provider="DataGoogleSheets" finished-at="2019-10-04T15:13:48 PDT">
+        <test-method status="PASS" signature="findFlight([Ljava.lang.String;)[pri:1, instance:org.softtek.tests.test@2a17b7b6]" name="findFlight" duration-ms="1894" started-at="2019-10-06T18:27:16 MDT" description="I want to find a flight" data-provider="DataGoogleSheets" finished-at="2019-10-06T18:27:18 MDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@4a9f80d3]]>
+                <![CDATA[[Ljava.lang.String;@51cd7ffc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findFlight -->
-        <test-method status="PASS" signature="selectFlight([Ljava.lang.String;)[pri:2, instance:org.softtek.tests.test@3d99d22e]" name="selectFlight" duration-ms="143" started-at="2019-10-04T15:13:48 PDT" description="I want to select a flight" data-provider="DataGoogleSheets" finished-at="2019-10-04T15:13:49 PDT">
+        <test-method status="PASS" signature="destinationsAndDatesMatch([Ljava.lang.String;)[pri:2, instance:org.softtek.tests.test@2a17b7b6]" name="destinationsAndDatesMatch" duration-ms="164" started-at="2019-10-06T18:27:18 MDT" description="depart destination and date match" data-provider="DataGoogleSheets" finished-at="2019-10-06T18:27:18 MDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@2f162cc0]]>
+                <![CDATA[[Ljava.lang.String;@3a62c01e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectFlight -->
+        </test-method> <!-- destinationsAndDatesMatch -->
+        <test-method status="PASS" signature="printDepartFlightsDitailsInConsole()[pri:3, instance:org.softtek.tests.test@2a17b7b6]" name="printDepartFlightsDitailsInConsole" duration-ms="628" started-at="2019-10-06T18:27:18 MDT" description="print in console the depart flight details" finished-at="2019-10-06T18:27:19 MDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printDepartFlightsDitailsInConsole -->
+        <test-method status="PASS" signature="chooseLowerPrice()[pri:4, instance:org.softtek.tests.test@2a17b7b6]" name="chooseLowerPrice" duration-ms="267" started-at="2019-10-06T18:27:19 MDT" description="choose the lower depart price" finished-at="2019-10-06T18:27:19 MDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseLowerPrice -->
+        <test-method status="PASS" signature="returnDateAndDestinationMatch([Ljava.lang.String;)[pri:5, instance:org.softtek.tests.test@2a17b7b6]" name="returnDateAndDestinationMatch" duration-ms="58" started-at="2019-10-06T18:27:19 MDT" description="return destination and date match" data-provider="DataGoogleSheets" finished-at="2019-10-06T18:27:19 MDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@644c78d4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- returnDateAndDestinationMatch -->
+        <test-method status="PASS" signature="printReturnFlightsDitailsInConsole()[pri:6, instance:org.softtek.tests.test@2a17b7b6]" name="printReturnFlightsDitailsInConsole" duration-ms="647" started-at="2019-10-06T18:27:19 MDT" description="print in console the return flight details" finished-at="2019-10-06T18:27:20 MDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printReturnFlightsDitailsInConsole -->
+        <test-method status="PASS" signature="chooseHigherPrice()[pri:7, instance:org.softtek.tests.test@2a17b7b6]" name="chooseHigherPrice" duration-ms="662" started-at="2019-10-06T18:27:20 MDT" description="choose the higher return price" finished-at="2019-10-06T18:27:21 MDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseHigherPrice -->
+        <test-method status="FAIL" signature="reserveFlights()[pri:8, instance:org.softtek.tests.test@2a17b7b6]" name="reserveFlights" duration-ms="34" started-at="2019-10-06T18:27:21 MDT" description="reserve flights" finished-at="2019-10-06T18:27:21 MDT">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='reserveFlights']"}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9DTTD1G', ip: '169.254.193.160', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_152-release'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1396f2544e0265a539bee55e2f906976
+*** Element info: {Using=xpath, value=//input[@name='reserveFlights']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='reserveFlights']"}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9DTTD1G', ip: '169.254.193.160', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_152-release'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1396f2544e0265a539bee55e2f906976
+*** Element info: {Using=xpath, value=//input[@name='reserveFlights']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.click(Unknown Source)
+at org.softtek.pageObjects.SelectFlightPage.reserveFlights(SelectFlightPage.java:92)
+at org.softtek.tests.test.reserveFlights(test.java:99)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1251)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reserveFlights -->
       </class> <!-- org.softtek.tests.test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

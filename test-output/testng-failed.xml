@@ -5,9 +5,9 @@
     <classes>
       <class name="org.softtek.tests.test">
         <methods>
-          <include name="selectFlight" invocation-numbers="0"/>
           <include name="setGoogleSheet"/>
           <include name="setUp"/>
+          <include name="reserveFlights"/>
         </methods>
       </class> <!-- org.softtek.tests.test -->
     </classes>

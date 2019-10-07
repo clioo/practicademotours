@@ -45,7 +45,6 @@ public class SheetsUtil {
     private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
         // Load client secrets.
         InputStream in = SheetsUtil.class.getResourceAsStream(CREDENTIALS_FILE_PATH);
-        System.out.println(in);
         if (in == null) {
             throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
         }
