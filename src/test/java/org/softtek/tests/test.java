@@ -3,6 +3,7 @@ package org.softtek.tests;
 import org.softtek.config.Setup;
 import org.softtek.objects.Flight;
 import org.softtek.objects.User;
+import org.softtek.pageObjects.BookFlightPage;
 import org.softtek.pageObjects.FindFlightPage;
 import org.softtek.pageObjects.HomePage;
 import org.softtek.pageObjects.SelectFlightPage;
@@ -16,6 +17,7 @@ import junit.framework.Assert;
 public class test extends Setup{
 	Object[] testObjArray;
 	SelectFlightPage selectFlightPage;
+	BookFlightPage bookFlightPage;
 	Flight flight;
 	
 	@BeforeTest()
@@ -24,7 +26,7 @@ public class test extends Setup{
 		setBrowser(browser);
 	}
 	
-	@Test(dataProvider = "DataGoogleSheets", description="I want to login", priority=0)
+	@Test(dataProvider = "DataGoogleSheets", description="I want to login and load the data", priority=0)
     public void login(String ... data) {
 		User user = new User(data[0],data[1]); // 0 = username | 1 = password
 		HomePage homePage = new HomePage(driver);
@@ -97,7 +99,12 @@ public class test extends Setup{
 	public void reserveFlights() {
 		selectFlightPage.reserveFlights();
 	}
-	
+
+	@Test(description="check if summary is correct", priority=9)
+	public void summaryIsCorrect(){
+		bookFlightPage = new BookFlightPage(driver);
+		bookFlightPage.summaryIsCorrect(flight);
+	}
 	
 	@DataProvider(name = "DataGoogleSheets")
 	public Object[] userRegister() throws Exception{
