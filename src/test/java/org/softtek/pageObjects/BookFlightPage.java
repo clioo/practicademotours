@@ -91,4 +91,9 @@ public class BookFlightPage extends BasePage {
         bookFlightContent.deliveryZip.sendKeys(deliveryAddress.getZipCode());
         selectByVisible(bookFlightContent.selectDeliveryCountry,deliveryAddress.getCountry());
     }
+
+    public void securePurchase(){
+        bookFlightContent.purchaseButton.click();
+    }
+
 }

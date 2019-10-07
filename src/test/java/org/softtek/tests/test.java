@@ -2,10 +2,7 @@ package org.softtek.tests;
 
 import org.softtek.config.Setup;
 import org.softtek.objects.*;
-import org.softtek.pageObjects.BookFlightPage;
-import org.softtek.pageObjects.FindFlightPage;
-import org.softtek.pageObjects.HomePage;
-import org.softtek.pageObjects.SelectFlightPage;
+import org.softtek.pageObjects.*;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -23,6 +20,7 @@ public class test extends Setup{
 	CreditCard creditCard;
 	BillingAddress billingAddress;
 	DeliveryAddress deliveryAddress;
+	ConfirmationPage confirmationPage;
 	
 	@BeforeTest()
 	private void setUp() throws Exception{
@@ -146,6 +144,13 @@ public class test extends Setup{
 		bookFlightPage.setCreditCard(creditCard);
 		bookFlightPage.setBillingAddress(billingAddress);
 		bookFlightPage.setDeliveryAddress(deliveryAddress);
+		bookFlightPage.securePurchase();
+	}
+
+	@Test(description="check if itinerary has been booked", priority=11)
+	public void itineraryBooked(){
+		confirmationPage = new ConfirmationPage(driver);
+		Assert.assertEquals("Your itinerary has been booked!",confirmationPage.confirmationMessage(), "Flights not booked");
 	}
 	
 	@DataProvider(name = "DataGoogleSheets")
