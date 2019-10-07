@@ -30,7 +30,7 @@ public class AttributesGenerator {
 				"Amie",
 				"Beth"
 		};
-		firstNames = new String[] {
+		lastNames = new String[] {
 				"Whittle",
 				"Ferguson",
 				"Barnes",
@@ -55,6 +55,8 @@ public class AttributesGenerator {
 	private String pickRandomlyOne(String[] stringArray) {
 		Random random = new Random();
 		Integer number = random.nextInt(stringArray.length);
+		System.out.println("random: " + number.toString());
+		System.out.println("string array length: " + stringArray.length);
 		return stringArray[number];
 	}
 	

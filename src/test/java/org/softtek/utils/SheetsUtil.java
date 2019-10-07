@@ -62,7 +62,7 @@ public class SheetsUtil {
 
     
     public Object[] getData() throws IOException, GeneralSecurityException{
-    	range = "A5:S1000"; //TO:DO get from the environment
+    	range = "A5:AE1000"; //TO:DO get from the environment
        	String[][] tabArray = null;
         ValueRange response = this.service.spreadsheets().values()
                 .get(this.spreadsheetId, this.range)

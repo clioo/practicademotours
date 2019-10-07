@@ -1,8 +1,7 @@
 package org.softtek.tests;
 
 import org.softtek.config.Setup;
-import org.softtek.objects.Flight;
-import org.softtek.objects.User;
+import org.softtek.objects.*;
 import org.softtek.pageObjects.BookFlightPage;
 import org.softtek.pageObjects.FindFlightPage;
 import org.softtek.pageObjects.HomePage;
@@ -13,12 +12,17 @@ import org.testng.annotations.Test;
 
 import junit.framework.Assert;
 
+import java.util.Dictionary;
+
 
 public class test extends Setup{
 	Object[] testObjArray;
 	SelectFlightPage selectFlightPage;
 	BookFlightPage bookFlightPage;
 	Flight flight;
+	CreditCard creditCard;
+	BillingAddress billingAddress;
+	DeliveryAddress deliveryAddress;
 	
 	@BeforeTest()
 	private void setUp() throws Exception{
@@ -28,25 +32,52 @@ public class test extends Setup{
 	
 	@Test(dataProvider = "DataGoogleSheets", description="I want to login and load the data", priority=0)
     public void login(String ... data) {
-		User user = new User(data[0],data[1]); // 0 = username | 1 = password
+		System.out.println(data.length);
+		User user = new User(data[0], data[1]); // 0 = username | 1 = password
 		HomePage homePage = new HomePage(driver);
 		homePage.setUsername(user.getUsername());
 		homePage.setPassword(user.getPassword());
 		homePage.login();
 		flight = new Flight(
-				data[2], 
-				data[3], 
-				data[4], 
-				data[5], 
-				data[6], 
-				data[7], 
-				data[8], 
-				data[9], 
-				data[10], 
+				data[2],
+				data[3],
+				data[4],
+				data[5],
+				data[6],
+				data[7],
+				data[8],
+				data[9],
+				data[10],
 				data[11]);
-    }
-	
-	
+
+		creditCard = new CreditCard(
+				data[12],
+				data[13],
+				data[14],
+				data[15],
+				data[16],
+				data[17],
+				data[18]
+		);
+
+		billingAddress = new BillingAddress(
+				data[19],
+				data[20],
+				data[21],
+				data[22],
+				data[23],
+				data[24]
+		);
+		deliveryAddress = new DeliveryAddress(
+				data[25],
+				data[26],
+				data[27],
+				data[28],
+				data[29],
+				data[30]
+		);
+	}
+
 	@Test(dataProvider = "DataGoogleSheets", description="I want to find a flight", priority=1)
     public void findFlight(String ... data) {
 		FindFlightPage findFlightPage = new FindFlightPage(driver);
@@ -76,7 +107,9 @@ public class test extends Setup{
 	
 	@Test(description="choose the lower depart airline price", priority=4)
 	public void chooseLowerPrice() {
-		flight.setSelectedDepartAirline(selectFlightPage.chooseLowerDepartPrice());
+		Dictionary<String, String> flightDetails = selectFlightPage.chooseLowerDepartPrice();
+		flight.setSelectedDepartAirline(flightDetails.get("airlineName"));
+		flight.setSelectedDepartPrice(flightDetails.get("airlinePrice"));
 	}
 	
 	@Test(dataProvider = "DataGoogleSheets", description="return destination and date match", priority=5)
@@ -92,7 +125,9 @@ public class test extends Setup{
 	
 	@Test(description="choose the higher return airline price", priority=7)
 	public void chooseHigherPrice() {
-		flight.setSelectedReturnAirline(selectFlightPage.chooseHigherReturnPrice());
+		Dictionary<String, String> flightDetails = selectFlightPage.chooseHigherReturnPrice();
+		flight.setSelectedReturnAirline(flightDetails.get("airlineName"));
+		flight.setSelectedReturnPrice(flightDetails.get("airlinePrice"));
 	}
 	
 	@Test(description="reserve flights", priority=8)
@@ -103,7 +138,14 @@ public class test extends Setup{
 	@Test(description="check if summary is correct", priority=9)
 	public void summaryIsCorrect(){
 		bookFlightPage = new BookFlightPage(driver);
-		bookFlightPage.summaryIsCorrect(flight);
+		Assert.assertTrue(bookFlightPage.summaryIsCorrect(flight));
+	}
+	@Test(description="fill book a flight attributes", priority=10)
+	public void fillBookFlightAttributes(){
+		bookFlightPage.setAllPassengers(flight);
+		bookFlightPage.setCreditCard(creditCard);
+		bookFlightPage.setBillingAddress(billingAddress);
+		bookFlightPage.setDeliveryAddress(deliveryAddress);
 	}
 	
 	@DataProvider(name = "DataGoogleSheets")

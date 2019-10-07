@@ -8,6 +8,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.softtek.locators.SelectFlightContent;
 
+import java.util.Dictionary;
+import java.util.Hashtable;
+
 public class SelectFlightPage extends BasePage{
 	public WebDriver driver;
 	WebDriverWait wait;
@@ -63,7 +66,7 @@ public class SelectFlightPage extends BasePage{
 	  /**
 	   * Returns the selected airline.
 	   */
-	public String chooseLowerDepartPrice() {
+	public Dictionary<String, String> chooseLowerDepartPrice() {
 		Integer lower = 0;
 		Integer lowerIndex = 0;
 		for (int i = 0; i < selectFlightContent.radioGroupDepart.size(); i++) {
@@ -77,17 +80,21 @@ public class SelectFlightPage extends BasePage{
 			}
 		}
 		selectFlightContent.radioGroupDepart.get(lowerIndex).click();
-		return selectFlightContent.departFlightAirlinesElements.get(lowerIndex).getText();
+		// Initializing a Dictionary
+		Dictionary<String, String> flightDetails = new Hashtable();
+		flightDetails.put("airlineName", selectFlightContent.departFlightAirlinesElements.get(lowerIndex).getText());
+		flightDetails.put("airlinePrice",lower.toString());
+		return flightDetails;
 	}
 	
 	  /**
 	   * Returns the selected airline.
 	   */
-	public String chooseHigherReturnPrice() {
+	public Dictionary<String, String> chooseHigherReturnPrice() {
 		Integer higher = 0;
 		Integer higherIndex = 0;
-		for (int i = 0; i < selectFlightContent.radioGroupDepart.size(); i++) {
-			Integer price = getPriceFromString(selectFlightContent.departFlightPriceElements.get(i).getText());
+		for (int i = 0; i < selectFlightContent.radioGroupReturn.size(); i++) {
+			Integer price = getPriceFromString(selectFlightContent.returnFlightPriceElements.get(i).getText());
 			if (i == 0) {
 				higher = price;
 			}
@@ -96,8 +103,13 @@ public class SelectFlightPage extends BasePage{
 				higherIndex = i;
 			}
 		}
+
+		// Initializing a Dictionary
+		Dictionary<String, String> flightDetails = new Hashtable();
+		flightDetails.put("airlineName", selectFlightContent.returnFlightAirlinesElements.get(higherIndex).getText());
+		flightDetails.put("airlinePrice",higher.toString());
 		selectFlightContent.radioGroupReturn.get(higherIndex).click();
-		return selectFlightContent.returnFlightAirlinesElements.get(higherIndex).getText();
+		return flightDetails;
 	}
 	
 	public void reserveFlights() {

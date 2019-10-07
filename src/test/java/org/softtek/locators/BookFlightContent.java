@@ -4,6 +4,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class BookFlightContent {
+    //Summary
+    @FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td/table/tbody/tr")
+    public List<WebElement> sumaryRows;
+
+    //Passengers
     @FindBy(xpath="//input[starts-with(@name, 'passFirst')]")
     public List<WebElement> passengerFirstNameInputs;
 

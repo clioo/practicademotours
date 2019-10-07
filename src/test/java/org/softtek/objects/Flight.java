@@ -13,6 +13,39 @@ public class Flight {
 	private String airLinePreference;
 	private String selectedDepartAirline;
 	private String selectedReturnAirline;
+	private String selectedDepartPrice;
+	private String selectedReturnPrice;
+
+	public Integer getTotalPrice(){
+		Integer departPrice =  Integer.parseInt(selectedDepartPrice);
+		Integer returnPrice =  Integer.parseInt(selectedReturnPrice);
+		return (departPrice + returnPrice) * Integer.parseInt(numberOfPassengers);
+	}
+	public Integer getTotalPrice(Integer taxes){
+		Integer departPrice =  Integer.parseInt(selectedDepartPrice);
+		Integer returnPrice =  Integer.parseInt(selectedReturnPrice);
+		System.out.println("en flight: " + selectedDepartPrice);
+		System.out.println("en flight: " + selectedReturnPrice);
+		return ((departPrice + returnPrice) * Integer.parseInt(numberOfPassengers)) + taxes;
+	}
+
+	public String getSelectedReturnPrice() {
+		return selectedReturnPrice;
+	}
+
+	public void setSelectedReturnPrice(String selectedReturnPrice) {
+		this.selectedReturnPrice = selectedReturnPrice;
+	}
+
+	public String getSelectedDepartPrice() {
+		return selectedDepartPrice;
+	}
+
+	public void setSelectedDepartPrice(String selectedDepartPrice) {
+		this.selectedDepartPrice = selectedDepartPrice;
+	}
+
+
 	
 	public String getSelectedReturnAirline() {
 		return selectedReturnAirline;
